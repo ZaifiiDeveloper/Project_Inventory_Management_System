@@ -5,9 +5,63 @@
         </a>
 
         <ul class="sidebar-nav">
-            <li class="sidebar-item active">
-                <a class="sidebar-link" href="pages-blank.html">
-                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.dashboard') }}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Dashboard</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.categories') }}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Categories</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.brands') }}">
+                    <i class="align-middle" data-feather="book"></i>
+                    <span class="align-middle">Brands</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.vendors') }}">
+                    <i class="align-middle" data-feather="book"></i>
+                    <span class="align-middle">Vendors</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.products') }}">
+                    <i class="align-middle" data-feather="book"></i>
+                    <span class="align-middle">Products</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.orders') }}">
+                    <i class="align-middle" data-feather="book"></i>
+                    <span class="align-middle">Orders</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.customers') }}">
+                    <i class="align-middle" data-feather="book"></i>
+                    <span class="align-middle">Customers</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.sale_orders') }}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Sale Orders</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('admin.inventory') }}">
+                    <i class="align-middle" data-feather="book"></i>
+                    <span class="align-middle">Inventory</span>
                 </a>
             </li>
         </ul>

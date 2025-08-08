@@ -38,9 +38,19 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
+        'authenticate_middleware' => [
+            \App\Http\Middleware\Authenticate::class,
+            // Add any other middlewares you want in this group
+        ],
+
+        'redirect_middleware' => [
+            \App\Http\Middleware\RedirectIfAuthenticated::class,
+            // Add any other middlewares you want in this group
+        ],
+
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-            \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+            \Illuminate\Routing\Middleware\ThrottleRequests::class . ':api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
